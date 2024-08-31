@@ -6,29 +6,32 @@
     <title>Student Dashboard - Student-Teacher Portal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/student-dashboard.js" defer></script> <!-- Include your JS file -->
 </head>
 <body>
-
     <div class="container mt-5">
-        <h2 class="text-center">Welcome, [Student Name]</h2>
+        <h1 class="text-center">Welcome, <span id="student-name">[Student Name]</span></h1>
+        <p class="text-center">Ask your queries here</p>
+        <br>
         <div class="row">
             <div class="col-md-8">
                 <h4>Your Queries</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">Query 1</li>
-                    <li class="list-group-item">Query 2</li>
-                    <li class="list-group-item">Query 3</li>
+                <ul id="queries-list" class="list-group">
                 </ul>
             </div>
             <div class="col-md-4">
+                <br>
+                
                 <h4>Ask a New Query</h4>
-                <form>
+                <form id="queryForm">
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <select class="form-control" id="subject">
                             <option value="math">Mathematics</option>
-                            <option value="science">Science</option>
-                            <option value="history">History</option>
+                            <option value="Data structures">Data structures</option>
+                            <option value="Computer architechture">Computer architechture</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -40,11 +43,5 @@
             </div>
         </div>
     </div>
-
- 
 </body>
 </html>
-
- <!-- Bootstrap JS, Popper.js, and jQuery 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> -->

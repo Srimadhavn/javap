@@ -7,7 +7,7 @@
   }
    
   ::-webkit-scrollbar-thumb {
-    background-color: #335ddc;
+    background-color: #000000;
     border-radius: 8px;
   }
   
@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #d9edff;
+    background: #292c2e;
   }
   .login-box {
     display: flex;
